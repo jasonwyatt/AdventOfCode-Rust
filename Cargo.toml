@@ -1,0 +1,14 @@
+[package]
+name = "adventofcode_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "3.0.0-rc.7", features = ["derive"] }
+
+[profile.release]
+opt-level = 3
+overflow-checks = false
+lto = "fat"
